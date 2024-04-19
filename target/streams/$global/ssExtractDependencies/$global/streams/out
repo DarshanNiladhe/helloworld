@@ -1,0 +1,69 @@
+sbt.ResolveException: download failed: org.apache.parquet#parquet-jackson;1.10.1!parquet-jackson.jar
+download failed: org.apache.arrow#arrow-format;0.10.0!arrow-format.jar
+download failed: com.vlkan#flatbuffers;1.2.0-3f79e055!flatbuffers.jar
+download failed: org.apache.arrow#arrow-memory;0.10.0!arrow-memory.jar
+download failed: com.google.code.findbugs#jsr305;3.0.2!jsr305.jar
+download failed: org.slf4j#slf4j-api;1.7.25!slf4j-api.jar
+download failed: joda-time#joda-time;2.9.9!joda-time.jar
+download failed: com.fasterxml.jackson.core#jackson-core;2.7.9!jackson-core.jar(bundle)
+download failed: com.carrotsearch#hppc;0.7.2!hppc.jar(bundle)
+	at sbt.IvyActions$.sbt$IvyActions$$resolve(IvyActions.scala:320)
+	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:191)
+	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:168)
+	at sbt.IvySbt$Module$$anonfun$withModule$1.apply(Ivy.scala:156)
+	at sbt.IvySbt$Module$$anonfun$withModule$1.apply(Ivy.scala:156)
+	at sbt.IvySbt$$anonfun$withIvy$1.apply(Ivy.scala:133)
+	at sbt.IvySbt.sbt$IvySbt$$action$1(Ivy.scala:57)
+	at sbt.IvySbt$$anon$4.call(Ivy.scala:65)
+	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:113)
+	at xsbt.boot.Locks$GlobalLock.withChannelRetries$1(Locks.scala:91)
+	at xsbt.boot.Locks$GlobalLock.$anonfun$withFileLock$1(Locks.scala:119)
+	at xsbt.boot.Using$.withResource(Using.scala:12)
+	at xsbt.boot.Using$.apply(Using.scala:9)
+	at xsbt.boot.Locks$GlobalLock.withFileLock(Locks.scala:119)
+	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:71)
+	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:59)
+	at xsbt.boot.Locks$.apply0(Locks.scala:47)
+	at xsbt.boot.Locks$.apply(Locks.scala:36)
+	at sbt.IvySbt.withDefaultLogger(Ivy.scala:65)
+	at sbt.IvySbt.withIvy(Ivy.scala:128)
+	at sbt.IvySbt.withIvy(Ivy.scala:125)
+	at sbt.IvySbt$Module.withModule(Ivy.scala:156)
+	at sbt.IvyActions$.updateEither(IvyActions.scala:168)
+	at sbt.Classpaths$$anonfun$sbt$Classpaths$$work$1$1.apply(Defaults.scala:1555)
+	at sbt.Classpaths$$anonfun$sbt$Classpaths$$work$1$1.apply(Defaults.scala:1551)
+	at sbt.Classpaths$$anonfun$doWork$1$1$$anonfun$122.apply(Defaults.scala:1586)
+	at sbt.Classpaths$$anonfun$doWork$1$1$$anonfun$122.apply(Defaults.scala:1584)
+	at sbt.Tracked$$anonfun$lastOutput$1.apply(Tracked.scala:37)
+	at sbt.Classpaths$$anonfun$doWork$1$1.apply(Defaults.scala:1589)
+	at sbt.Classpaths$$anonfun$doWork$1$1.apply(Defaults.scala:1583)
+	at sbt.Tracked$$anonfun$inputChanged$1.apply(Tracked.scala:60)
+	at sbt.Classpaths$.cachedUpdate(Defaults.scala:1606)
+	at sbt.Classpaths$$anonfun$updateTask$1.apply(Defaults.scala:1533)
+	at sbt.Classpaths$$anonfun$updateTask$1.apply(Defaults.scala:1485)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[error] (*:ssExtractDependencies) sbt.ResolveException: download failed: org.apache.parquet#parquet-jackson;1.10.1!parquet-jackson.jar
+[error] download failed: org.apache.arrow#arrow-format;0.10.0!arrow-format.jar
+[error] download failed: com.vlkan#flatbuffers;1.2.0-3f79e055!flatbuffers.jar
+[error] download failed: org.apache.arrow#arrow-memory;0.10.0!arrow-memory.jar
+[error] download failed: com.google.code.findbugs#jsr305;3.0.2!jsr305.jar
+[error] download failed: org.slf4j#slf4j-api;1.7.25!slf4j-api.jar
+[error] download failed: joda-time#joda-time;2.9.9!joda-time.jar
+[error] download failed: com.fasterxml.jackson.core#jackson-core;2.7.9!jackson-core.jar(bundle)
+[error] download failed: com.carrotsearch#hppc;0.7.2!hppc.jar(bundle)
